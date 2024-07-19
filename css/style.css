@@ -16,10 +16,19 @@ main {
 }
 aside {
     flex-basis: 45px;
-    flex-shrink: 0;
-    height: 100%;
+    /* flex-shrink: 0; */
+    /* height: 100%; */
     background-color: brown;           /* per blocchettoni */
-    border: 5px dashed green;           /* per blocchettoni */
+    border: 5px dashed green;          /* per blocchettoni */                                          
+}
+aside > nav {
+    overflow-y: hidden;
+    height: calc(100% - 30px);
+}
+aside > .aside-footer {
+    height: 30px;
+    background-color: darkcyan;
+    border: 5px dashed black;
 }
 
 main .content {
@@ -32,8 +41,12 @@ main .content {
 .content header {
     height: 35px;
     width: 100%;
-    background-color: gold;
+    background-color: rgba(255, 215, 0, 0.5);
     border: 5px dashed fuchsia;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 footer {
