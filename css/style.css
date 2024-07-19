@@ -16,7 +16,7 @@ main {
 }
 aside {
     width: 60px;
-    /* height: 100%; */
+    height: 100%;
     background-color: brown;           /* per blocchettoni */
     border: 5px dashed green;          /* per blocchettoni */
 }
@@ -24,8 +24,8 @@ aside > nav {
     overflow-y: hidden;
     height: calc(100% - 30px);
     padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+
 }
 aside > .aside-footer {
     height: 30px;
@@ -36,7 +36,8 @@ aside > .aside-footer {
     flex-basis: 100%;
     background-color: dodgerblue;
     border: 5px dashed black;
-    /* overflow-y:scroll; */
+    overflow-y:scroll;
+    scrollbar-width: thin;
 }
 .content header {
     height: 35px;
@@ -47,8 +48,15 @@ aside > .aside-footer {
     right: 0;
     left: 0;
 }
+
+.prova {
+    height: 30px;
+    width: 40px;
+    background-color: black;
+    border: 2px solid white;
+}
 .render-library {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 
