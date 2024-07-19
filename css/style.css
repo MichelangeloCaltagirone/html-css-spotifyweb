@@ -1,0 +1,43 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Blocchettoni iniziali  */
+main {
+    height: calc(100vh - 80px);
+    background-color: orangered;       /* per blocchettoni */
+    border: 5px dashed blue;           /* per blocchettoni */
+     
+    display: flex;
+    
+}
+aside {
+    flex-basis: 45px;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: brown;           /* per blocchettoni */
+    border: 5px dashed green;           /* per blocchettoni */
+}
+
+main .content {
+    flex-basis: calc(100% - 45px);
+    background-color: dodgerblue;
+    border: 5px dashed black;
+    overflow-y:scroll;
+    
+}
+.content header {
+    height: 35px;
+    width: 100%;
+    background-color: gold;
+    border: 5px dashed fuchsia;
+}
+
+footer {
+    height: 80px;
+    background-color: blueviolet;        /* per blocchettoni */
+    border: 5px dashed goldenrod;      /* per blocchettoni */
+}
