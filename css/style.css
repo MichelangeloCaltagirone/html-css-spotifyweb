@@ -10,37 +10,36 @@ main {
     height: calc(100vh - 80px);
     background-color: orangered;       /* per blocchettoni */
     border: 5px dashed blue;           /* per blocchettoni */
-     
+
     display: flex;
-    
+
 }
 aside {
-    flex-basis: 45px;
-    /* flex-shrink: 0; */
+    width: 60px;
     /* height: 100%; */
     background-color: brown;           /* per blocchettoni */
-    border: 5px dashed green;          /* per blocchettoni */                                          
+    border: 5px dashed green;          /* per blocchettoni */
 }
 aside > nav {
     overflow-y: hidden;
     height: calc(100% - 30px);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 aside > .aside-footer {
     height: 30px;
     background-color: darkcyan;
     border: 5px dashed black;
 }
-
-main .content {
-    flex-basis: calc(100% - 45px);
+.content {
+    flex-basis: 100%;
     background-color: dodgerblue;
     border: 5px dashed black;
-    overflow-y:scroll;
-    
+    /* overflow-y:scroll; */
 }
 .content header {
     height: 35px;
-    width: 100%;
     background-color: rgba(255, 215, 0, 0.5);
     border: 5px dashed fuchsia;
     position: sticky;
@@ -48,6 +47,26 @@ main .content {
     right: 0;
     left: 0;
 }
+.render-library {
+    overflow-y: scroll;
+}
+
+
+/* Scroll bar style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     height: 80px;

@@ -1,0 +1,9 @@
+@media screen and (min-width: 550px) {
+    aside {
+        width: 180px;
+    }
+    .content {
+        flex-basis: calc(100% - 100px);
+
+    }
+}
