@@ -1,7 +1,43 @@
 @media screen and (min-width: 550px) {
+    /* Aside style */
     aside {
         width: 180px;
+        padding: 10px;
+        font-size: small;
     }
+    aside > nav, .aside-footer {
+        text-align: left;
+    }
+    #logo-sm {
+        display: none;
+    }
+    #logo-bg {
+        display: block;
+    }
+    nav li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    nav img {
+        margin-right: 3px;
+    }
+    .fake-btn {
+        display: inline-block;
+    }
+    aside .custom-hr, span {
+        display: inline;
+    }
+    nav h2 {
+        display: block;
+    }
+    .aside-footer {
+        padding: 5px;
+    }
+    
+
+
+
     .content {
         flex-basis: calc(100% - 100px);
 
@@ -16,7 +52,5 @@
     .left-footer, .right-footer {
         flex-basis: 150px;
     }
-    .right-footer {
-        gap:5px;
-    }
+    
 }

@@ -8,6 +8,9 @@
 img {
     width: 100%;
 }
+ul {
+    list-style-type: none;
+}
 .flex {
     display: flex;
 }
@@ -21,25 +24,29 @@ main {
 
 }
 aside {
-    width: 60px;
+    width: 55px;
     height: 100%;
-    background-color: brown;           /* per blocchettoni */
-    border: 5px dashed green;          /* per blocchettoni */
+    background-color: black;
+    color: grey;           /* per blocchettoni */
+    /* border: 5px dashed green;          per blocchettoni */
 }
 aside > nav {
     overflow-y: hidden;
-    height: calc(100% - 30px);
+    height: calc(100% - 70px);
     padding: 5px;
     width: 100%;
+    text-align: center;
 
 }
-aside > .aside-footer {
-    height: 30px;
-    background-color: darkcyan;
-    border: 5px dashed black;
+.aside-footer {
+    height: 70px;
+    /* background-color: darkcyan; */
+    /* border: 5px dashed black; */
+    text-align: center;
+
 }
 .content {
-    flex-basis: calc(100% - 60px);
+    flex-basis: calc(100% - 55px);
     background-color: dodgerblue;
     border: 5px dashed black;
     overflow-y:scroll;
@@ -55,21 +62,76 @@ aside > .aside-footer {
     left: 0;
 }
 
-.prova {
-    height: 30px;
-    width: 40px;
-    background-color: black;
-    border: 2px solid white;
-    color: white;
-}
 .render-library {
     /* overflow-y: scroll; */
 }
 
+/* Inner Aside Elements style */
 
-/* Scroll bar style */
+nav img {
+    width: 25px;
+    display: inline-block;
+    align-self: baseline;
+}
+nav #logo-sm {
+    filter: invert();
+    width: 35px;
+    margin-bottom: 10px;
+}
+#logo-bg {
+    display: none;
+    width: 8rem;
+    margin-bottom: 10px;
+}
+.opac {
+    filter: opacity(0.5);
+}
+nav h2 {
+    color: white;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+.fake-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 10px 10px 0;
+}
+.create-playlist {
+    font-size: 14px;
+}
+aside .new-playlist li {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
 
 
+.aside-footer li {
+    margin: 10px 0;
+}
+.aside-footer span {
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 8px;
+}
+aside .custom-hr,span, h2 {
+    display: none;
+}
+#user {
+    color: white;
+    font-size: 12px;
+}
+aside span:hover {
+    color: white;
+}
+/* .create-playlist:hover + .fake-btn {
+    background-color: white;    
+} da aggiustare */
 
 
 
@@ -85,29 +147,26 @@ aside > .aside-footer {
 
 footer {
     height: 80px;
-    background-color: black;        /* per blocchettoni */
-    /* border: 5px dashed goldenrod;      per blocchettoni */
+    background-color: #1a1a37;;
     justify-content: space-between;
     align-items: center;
     font-size: small;
     padding: 0 5px;
     color: white;
 }
+
 /* Left Footer */
 .left-footer {
     height: 60px;
     flex-basis: 24%;
-    /* background-color: lightsteelblue; */
     align-items: center;
     justify-content: space-between;
 }
 .left-footer img {
     width: 35px;
-    height: 35px;
     margin-right: 5px;
 }
 .left-footer ul {
-    list-style-type: none;
     display: inline-block; 
 }
 .left-footer ul li:first-child {
@@ -119,14 +178,16 @@ footer {
 .left-footer i {
     font-size: 1rem;
     color: grey;
+    margin-bottom: 3px;
+}
+.left-footer div:last-child {
+    padding-right: 5px;
 }
 
 /* Music Player style */
-
 .music-player {
     height: 60px;
     flex-basis: 50%;
-    /* background-color: lightsteelblue; */
     text-align: center;
     padding: 10px 0;
 }
@@ -138,10 +199,11 @@ footer {
     margin: 0 15px;
     font-size: 25px;
 }
+
 /* Fake Time bar */
 .fake-time-bar {
     display: inline-block;
-    height: 5px;
+    height: 3px;
     width: 70%;
     background-color: grey;
     border-radius: 5px;
@@ -153,13 +215,12 @@ footer {
     height: 100%;
     border-radius: 5px;
 }
-/* Right-footer */
 
+/* Right-footer */
 .right-footer {
     height: 60px;
     flex-basis: 24%;
-    /* background-color: lightsteelblue; */
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 5px;
 }
