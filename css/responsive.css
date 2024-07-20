@@ -6,4 +6,17 @@
         flex-basis: calc(100% - 100px);
 
     }
+    /* Footer style */
+    .left-footer li span {
+        display: inline;
+    }
+    .left-footer li:last-child {
+        display: none;
+    }
+    .left-footer, .right-footer {
+        flex-basis: 150px;
+    }
+    .right-footer {
+        gap:5px;
+    }
 }
