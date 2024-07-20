@@ -17,8 +17,8 @@ ul {
 /* Blocchettoni iniziali  */
 main {
     height: calc(100vh - 80px);
-    background-color: orangered;       /* per blocchettoni */
-    border: 5px dashed blue;           /* per blocchettoni */
+    /* background-color: orangered;       per blocchettoni */
+    /* border: 5px dashed blue;           per blocchettoni */
 
     display: flex;
 
@@ -27,7 +27,8 @@ aside {
     width: 55px;
     height: 100%;
     background-color: black;
-    color: grey;           /* per blocchettoni */
+    color: grey; 
+    display: block;          /* per blocchettoni */
     /* border: 5px dashed green;          per blocchettoni */
 }
 aside > nav {
@@ -47,15 +48,15 @@ aside > nav {
 }
 .content {
     flex-basis: calc(100% - 55px);
-    background-color: dodgerblue;
-    border: 5px dashed black;
+    background-color: #1a1a37;
+    /* border: 5px dashed black; */
     overflow-y:scroll;
     scrollbar-width: thin;
 }
 .content header {
     height: 80px;
-    background-color: rgba(255, 215, 0, 0.5);
-    border: 5px dashed fuchsia;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border: 5px dashed fuchsia; */
     position: sticky;
     top: 0;
     right: 0;
@@ -109,7 +110,7 @@ aside .new-playlist li {
     margin-bottom: 10px;
     font-size: 12px;
 }
-
+/* Aside Footer */
 
 .aside-footer li {
     margin: 10px 0;
@@ -134,10 +135,25 @@ aside span:hover {
 } da aggiustare */
 
 
+/* Main Content style */
+/* Header of main content */
 
-
-
-
+.content header {
+    justify-content: right;
+    align-items: center;
+    padding-right: 1rem;
+}
+header button {
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 5px 15px;
+    color: white;
+}
+button:hover {
+    scale: 1.1;
+}
 
 
 
@@ -147,7 +163,7 @@ aside span:hover {
 
 footer {
     height: 80px;
-    background-color: #1a1a37;;
+    background-color: #313133;;
     justify-content: space-between;
     align-items: center;
     font-size: small;
