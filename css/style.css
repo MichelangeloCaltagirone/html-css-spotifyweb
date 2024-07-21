@@ -120,7 +120,7 @@ aside .new-playlist li {
     font-weight: bold;
     font-size: 8px;
 }
-aside .custom-hr,span, h2 {
+aside .custom-hr, span, h2 {
     display: none;
 }
 #user {
@@ -154,9 +154,64 @@ header button {
 button:hover {
     scale: 1.1;
 }
-
-
-
+/* Render Library style */
+.content {
+    color: white;
+}
+.content nav {
+    color: grey;
+}
+.content nav li:first-child {
+    position: relative;
+}
+.content nav hr {
+    width: 25px;
+    border: 1px solid lightgreen;
+    position: absolute;
+    bottom: 0;
+    /* left: 50%;
+    translate: -100%; da aggiustare */
+}
+.content ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    row-gap: 15px;
+    margin: 0 auto;
+}
+.content nav li {
+    flex-basis: 25%;
+    text-align: center;
+}
+.content h3 {
+    padding: 15px 0 10px 15px;
+}
+/* Render the library */
+.render-library {
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+.render-library > * {
+    flex-basis: 50%;
+}
+.col {
+    padding: 5px;
+}
+.col > img {
+    margin-bottom: 5px;
+}
+.col > div {
+    text-align: center;
+}
+.title {
+    display: block;
+    margin-bottom: 5px;
+}
+.subtitle {
+    color: grey;
+    display: inline;
+    
+}
 
 /* Footer's page style */
 

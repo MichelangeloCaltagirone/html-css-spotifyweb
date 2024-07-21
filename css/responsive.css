@@ -14,7 +14,7 @@
     #logo-bg {
         display: block;
     }
-    nav li {
+    aside nav li {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
@@ -35,12 +35,14 @@
         padding: 5px;
     }
     
-
+/* Main content style */
 
 
     .content {
         flex-basis: calc(100% - 100px);
-
+    }
+    .content nav li {
+        flex-basis: calc(100% / 3);
     }
     /* Footer style */
     .left-footer li span {
