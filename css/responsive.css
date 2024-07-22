@@ -14,6 +14,9 @@
     .col {
         flex-basis: 100%;
     }
+    .active::before {
+        left: -5px;
+    }
 }
 
 @media screen and (min-width: 550px) {
@@ -61,7 +64,7 @@
         flex-basis: calc(100% / 3);
     }
     /* Footer style */
-    
+
     .left-footer li span {
         display: inline;
     }

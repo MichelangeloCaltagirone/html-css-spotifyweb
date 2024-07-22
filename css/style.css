@@ -34,7 +34,6 @@ aside {
     display: block;
 }
 aside > nav {
-    overflow-y: hidden;
     height: calc(100% - 70px);
     padding: 5px;
     width: 100%;
@@ -62,12 +61,13 @@ aside > nav {
 
 
 /* Inner Aside Elements style */
-#home {
+.active {
     position: relative;
 }
-.green-sm-bar {
+.active::before {
+    content: '';
     position: absolute;
-    left: 0;
+    left: -15px;
     height: 100%;
     width: 5px;
     background-color: lightgreen;
@@ -138,7 +138,7 @@ aside span:hover {
 
 /* Main Content style */
 /* Header of main content */
-.content .green-sm-bar {
+/* .content .green-sm-bar {
     height: 3px;
     width: 30px;
     bottom: 0;
@@ -147,7 +147,7 @@ aside span:hover {
     margin: 0 auto;
     margin-top: 3px;
     position: static;
-}
+} */
 .content li.flex {
     flex-direction: column;
     align-items: center;
@@ -181,14 +181,6 @@ button:hover {
 .content nav li:first-child {
     position: relative;
 }
-/* .content nav hr {
-    width: 25px;
-    border: 1px solid lightgreen;
-    position: absolute;
-    bottom: 0;
-    /* left: 50%;
-    translate: -100%; da aggiustare
-} */
 
 .content ul {
     flex-wrap: wrap;
@@ -332,6 +324,9 @@ footer {
 .music-player .flex {
     align-items: center;
     justify-content: center;
+}
+.music-player div:last-child {
+    font-size: small;
 }
 
 /* Fake Time bar */
