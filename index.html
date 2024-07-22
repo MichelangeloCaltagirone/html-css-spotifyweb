@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -17,10 +20,14 @@
                         <img src="img/favicon.ico" alt="logo" id="logo-sm">
                         <img src="img/logo.svg" alt="logo" id="logo-bg">
                     </li>
-                    <li><img src="img/home.svg" alt="home"><span>Home</span></li>
+                    <li id="home">
+                        <img src="img/home.svg" alt="home"><span>Home</span>
+                        <div class="green-sm-bar"></div>
+                    </li>
                     <li><img class="opac" src="img/search.svg" alt="search"><span>Cerca</span></li>
                     <li><img class="opac" src="img/libreria.svg" alt="library"><span>La tua Libreria</span></li>
                 </ul>
+                
                 <h2>Playlist</h2>
                 <div class="fake-btn"><i class="fa-solid fa-plus fa-2xl"></i></div>
                 <span class="create-playlist">Crea Playlist</span>
@@ -50,7 +57,10 @@
             <header class="flex"><button>EFFETTUA L'UPGRADE</button></header>
             <nav>
                 <ul class="flex">
-                    <li>In Evidenza</li>
+                    <li class="flex">
+                        <div>In Evidenza</div>
+                        <div class="green-sm-bar"></div>
+                    </li>
                     <li>Podcast</li>
                     <li>Classifiche</li>
                     <li>Generi e Mood</li>
@@ -58,6 +68,8 @@
                     <li>Scopri</li>
                 </ul>
             </nav>
+        
+            
             <h3>Recently Played</h3>
             <div class="render-library flex">
 
@@ -176,6 +188,7 @@
                     </div>
                 </div>                
             </div>
+        
         </section>
         
     </main>
@@ -205,20 +218,23 @@
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
-            <div>
+            <div class="flex">
                 <strong>0.25</strong>
                 <div class="fake-time-bar">
                     <div class="fake-time-check"></div>
+                    <span class="fake-cursor"></span>
                 </div>
                 <strong>4.35</strong>
             </div>
         </div>
+
         <div class="right-footer">
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-display"></i>
             <i class="fa-solid fa-volume-high"></i>
             <div class="fake-time-bar">
                 <div class="fake-time-check"></div>
+                <span class="fake-cursor"></span>
             </div>
         </div>
 
