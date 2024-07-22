@@ -21,10 +21,14 @@
 
 @media screen and (min-width: 550px) {
     /* Aside style */
+    
     aside {
         flex-basis: 180px;
-        padding: 10px;
         font-size: small;
+        padding-bottom: 5px;
+    }
+    aside > nav {
+        padding: 10px;
     }
     aside > nav, .aside-footer {
         text-align: left;
@@ -53,7 +57,7 @@
         display: block;
     }
     .aside-footer {
-        padding: 5px;
+        padding: 10px;
     }
     /* Main content style */
 

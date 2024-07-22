@@ -30,18 +30,18 @@ aside {
     flex-basis: 55px;
     height: 100%;
     background-color: black;
-    color: grey; 
+    color: grey;
     display: block;
 }
 aside > nav {
-    height: calc(100% - 70px);
+    height: calc(100% - 80px);
     padding: 5px;
     width: 100%;
     text-align: center;
     position: relative;
 }
 .aside-footer {
-    height: 70px;
+    height: 80px;
     text-align: center;
 }
 .content {
@@ -62,12 +62,12 @@ aside > nav {
 
 
 /* Inner Aside Elements style */
-/* link style */
-aside a {
+/* link style of aside and main content*/
+aside a, .content a {
     text-decoration: none;
     color: grey;
 }
-aside a:hover {
+aside a:hover, .content a:hover {
     color: white;
 }
 .active {
@@ -76,20 +76,17 @@ aside a:hover {
 aside .active::before {
     content: '';
     position: absolute;
-    left: -15px;
+    left: -10px;
     height: 100%;
     width: 5px;
     background-color: lightgreen;
 }
 
+
 /* Overflow Elements part in Aside */
-ul.new-playlist {
-    overflow-y: auto;
+aside > nav {
+    overflow-y: hidden;
 }
-
-
-
-
 nav img {
     width: 25px;
     display: inline-block;
@@ -131,11 +128,6 @@ aside .new-playlist li {
     margin-bottom: 10px;
     font-size: 12px;
 }
-/* Aside Footer */
-.aside-footer {
-    position: relative;
-    z-index: 1;
-}
 .aside-footer li {
     margin: 10px 0;
 }
@@ -153,13 +145,11 @@ aside .custom-hr, span, h2 {
 }
 
 
-
-
 /* Main Content style */
 /* Header of main content */
 .content .active::before {
     content: '';
-    position: absolute;   
+    position: absolute;
     bottom: -5px;
     left: 50%;
     height: 3px;
@@ -190,6 +180,8 @@ header button {
 button:hover {
     scale: 1.1;
 }
+
+
 /* Render Library style */
 .content {
     color: white;
@@ -197,10 +189,6 @@ button:hover {
 .content nav {
     color: grey;
 }
-.content nav li:first-child {
-    position: relative;
-}
-
 .content ul {
     flex-wrap: wrap;
     justify-content: center;
@@ -212,9 +200,6 @@ button:hover {
     flex-basis: 25%;
     text-align: center;
 }
-.content li:hover {
-    color: white;
-}
 .content h3 {
     padding: 15px 0 10px 15px;
     font-size: 1.5rem;
@@ -224,8 +209,9 @@ h3 + span {
 }
 span + .render-library {
     margin-top: 20px;
-
 }
+
+
 /* Render the library */
 .play {
     justify-content: center;
@@ -246,7 +232,6 @@ span + .render-library {
 .col:hover .play {
     display: flex;
 }
-
 .render-library {
     padding: 0 10px;
     flex-wrap: wrap;
@@ -270,12 +255,11 @@ span + .render-library {
 .subtitle {
     color: grey;
     display: inline;
-    
+
 }
 
+
 /* Footer's page style */
-
-
 footer {
     height: 80px;
     background-color: #313133;;
@@ -287,6 +271,7 @@ footer {
     position: relative;
     z-index: 1;
 }
+
 
 /* Left Footer */
 .left-footer {
@@ -317,6 +302,7 @@ footer {
 .left-footer div:last-child {
     padding-right: 5px;
 }
+
 
 /* Music Player style */
 .music-player {
@@ -350,6 +336,7 @@ footer {
     font-size: small;
 }
 
+
 /* Fake Time bar */
 .fake-time-bar {
     display: inline-block;
@@ -370,7 +357,6 @@ footer {
 .fake-time-check:hover {
     background-color: lightgreen;
 }
-
 .fake-cursor {
     width: 15px;
     height: 15px;
@@ -386,6 +372,7 @@ footer {
     width: 10px;
     height: 10px;
 }
+
 
 /* Right-footer */
 .right-footer {
