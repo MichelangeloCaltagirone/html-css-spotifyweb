@@ -38,6 +38,8 @@ aside > nav {
     padding: 5px;
     width: 100%;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
 .aside-footer {
     height: 70px;
@@ -61,6 +63,14 @@ aside > nav {
 
 
 /* Inner Aside Elements style */
+/* link style */
+aside a {
+    text-decoration: none;
+    color: grey;
+}
+aside a:hover {
+    color: white;
+}
 .active {
     position: relative;
 }
@@ -114,7 +124,10 @@ aside .new-playlist li {
     font-size: 12px;
 }
 /* Aside Footer */
-
+.aside-footer {
+    position: relative;
+    z-index: 1;
+}
 .aside-footer li {
     margin: 10px 0;
 }
@@ -130,9 +143,7 @@ aside .custom-hr, span, h2 {
     color: white;
     font-size: 12px;
 }
-aside span:hover {
-    color: white;
-}
+
 
 
 
